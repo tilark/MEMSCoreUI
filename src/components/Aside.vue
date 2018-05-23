@@ -7,7 +7,7 @@
           default-active="2"
           class="el-menu-vertical-demo"
           @open="handleOpen"
-          @close="handleClose">
+          @close="handleClose" v-bind:router="true">
           <el-menu-item index="home">
             <i class="el-icon-menu"></i>
             <span slot="title">系统首页</span>
@@ -44,11 +44,11 @@
               <i class="el-icon-tickets"></i>
               <span>报表统计</span>
             </template>
-            <el-menu-item index="repaircontji">设备统计</el-menu-item>
-            <el-menu-item index="repaircontji">维修统计</el-menu-item>
-            <el-menu-item index="repaircontji-2">效益分析</el-menu-item>
-            <el-menu-item index="repaircontji-2">质量安全</el-menu-item>
-            <el-menu-item index="repaircontji-2">医用气体</el-menu-item>
+            <el-menu-item index="devicestatistics">设备统计</el-menu-item>
+            <el-menu-item index="repaircontji-2">维修统计</el-menu-item>
+            <el-menu-item index="repaircontji-3">效益分析</el-menu-item>
+            <el-menu-item index="repaircontji-4">质量安全</el-menu-item>
+            <el-menu-item index="repaircontji-5">医用气体</el-menu-item>
           </el-submenu>
           <el-submenu index="4">
              <template slot="title">

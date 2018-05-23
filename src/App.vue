@@ -5,7 +5,7 @@
       <el-container>
         <el-aside width="500px"><Aside></Aside></el-aside>
         <el-container>
-          <el-main>Main
+          <el-main>
             <!-- <img src="./assets/logo.png"> -->
             <router-view/>
           </el-main>
