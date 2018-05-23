@@ -4,7 +4,7 @@
       <el-col :span="12">
         <h5>菜单栏</h5>
         <el-menu
-          default-active="2"
+          default-active="home"
           class="el-menu-vertical-demo"
           @open="handleOpen"
           @close="handleClose" v-bind:router="true">
