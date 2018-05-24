@@ -45,7 +45,7 @@
               <span>报表统计</span>
             </template>
             <el-menu-item index="devicestatistics">设备统计</el-menu-item>
-            <el-menu-item index="repaircontji-2">维修统计</el-menu-item>
+            <el-menu-item index="repairstatistics">维修统计</el-menu-item>
             <el-menu-item index="repaircontji-3">效益分析</el-menu-item>
             <el-menu-item index="repaircontji-4">质量安全</el-menu-item>
             <el-menu-item index="repaircontji-5">医用气体</el-menu-item>
