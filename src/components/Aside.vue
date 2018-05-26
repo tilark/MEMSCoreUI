@@ -36,7 +36,7 @@
               <template slot="title"></template>
               <el-menu-item index="1-1">维修事件</el-menu-item>
               <el-menu-item index="maintancestatistics">保养事件</el-menu-item>
-              <el-menu-item index="1-3">计量事件</el-menu-item>
+              <el-menu-item index="measurementstatistics">计量事件</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <el-submenu index="3">
