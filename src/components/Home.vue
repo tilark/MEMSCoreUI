@@ -4,17 +4,22 @@
     <el-row>
       <el-col :span="12"><DeviceStatistics/></el-col>
       <el-col :span="12"><RepairStatistics/></el-col>
+      <el-col :span="12"><MaintanceStatistics/></el-col>
+      <el-col :span="12"><MeasurementStatistics/></el-col>
     </el-row>
   </section>
 </template>
 <script>
 import DeviceStatistics from './DeviceStatistics'
 import RepairStatistics from './RepairStatistics'
-
+import MaintanceStatistics from './MaintanceStatistics'
+import MeasurementStatistics from './MeasurementStatistics'
 export default {
   components: {
     DeviceStatistics,
-    RepairStatistics
+    RepairStatistics,
+    MaintanceStatistics,
+    MeasurementStatistics
   }
 }
 </script>
