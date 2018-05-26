@@ -115,7 +115,7 @@ export default {
           }
         },
         legend: {
-          data: ['Forest', 'Steppe', 'Desert', 'Wetland']
+          data: ['2018年第一季度', '2017年第四季度', '2017年第一季度']
         },
         toolbox: {
           show: true,
@@ -135,7 +135,7 @@ export default {
           {
             type: 'category',
             axisTick: {show: false},
-            data: ['2012', '2013', '2014', '2015', '2016']
+            data: ['第一个月', '第二个月', '第三个月', '合计']
           }
         ],
         yAxis: [
@@ -145,29 +145,23 @@ export default {
         ],
         series: [
           {
-            name: 'Forest',
+            name: '2018年第一季度',
             type: 'bar',
             barGap: 0,
             label: labelOption,
-            data: [320, 332, 301, 334, 390]
+            data: [322, 233, 316, 871]
           },
           {
-            name: 'Steppe',
+            name: '2017年第四季度',
             type: 'bar',
             label: labelOption,
-            data: [220, 182, 191, 234, 290]
+            data: [378, 378, 319, 1075]
           },
           {
-            name: 'Desert',
+            name: '2017年第一季度',
             type: 'bar',
             label: labelOption,
-            data: [150, 232, 201, 154, 190]
-          },
-          {
-            name: 'Wetland',
-            type: 'bar',
-            label: labelOption,
-            data: [98, 77, 101, 99, 40]
+            data: [307, 225, 341, 873]
           }
         ]
       }
