@@ -1,10 +1,6 @@
 <template>
   <section>
-    <el-row>
-      <el-col :span="12">
-        <div id="charPie" style="width:100%; height:400px;"></div>
-      </el-col>
-    </el-row>
+    <div id="charPie" style="width:100%; height:400px;"></div>
   </section>
 </template>
 <script>
@@ -20,7 +16,7 @@ export default {
       var pieChart = echarts.init(document.getElementById('charPie'))
       var option = {
         title: {
-          text: 'Pie Chart',
+          text: '设备类别',
           subtext: '纯属虚构',
           x: 'center'
         },

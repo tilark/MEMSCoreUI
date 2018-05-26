@@ -1,10 +1,6 @@
 <template>
   <section>
-    <el-row>
-      <el-col :span="22">
-        <div id="charBar" style="width:100%; height:600px;"></div>
-      </el-col>
-    </el-row>
+    <div id="charBar" style="width:100%; height:600px;"></div>
   </section>
 </template>
 <script>
@@ -107,6 +103,12 @@ export default {
       }
 
       option = {
+        title: {
+          text: '设备维修量统计',
+          subtext: '纯属虚构',
+          y: 'top',
+          x: 'center'
+        },
         color: ['#003366', '#006699', '#4cabce', '#e5323e'],
         tooltip: {
           trigger: 'axis',
@@ -115,7 +117,9 @@ export default {
           }
         },
         legend: {
-          data: ['2018年第一季度', '2017年第四季度', '2017年第一季度']
+          data: ['2018年第一季度', '2017年第四季度', '2017年第一季度'],
+          x: 'center',
+          y: 'bottom'
         },
         toolbox: {
           show: true,

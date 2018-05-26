@@ -3,9 +3,9 @@
     <el-container>
       <el-header>Header</el-header>
       <el-container>
-        <el-aside width="400px"><Aside></Aside></el-aside>
+        <el-aside width="250px"><Aside></Aside></el-aside>
         <el-container>
-          <el-main>
+          <el-main >
             <!-- <img src="./assets/logo.png"> -->
             <router-view/>
           </el-main>

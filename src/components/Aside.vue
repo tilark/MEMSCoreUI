@@ -1,7 +1,7 @@
 <template>
   <section>
-    <el-row class="tac">
-      <el-col :span="12">
+    <!-- <el-row class="tac">
+      <el-col :span="12"> -->
         <h5>菜单栏</h5>
         <el-menu
           default-active="home"
@@ -81,8 +81,8 @@
             </el-submenu>
           </el-submenu>
         </el-menu>
-      </el-col>
-  </el-row>
+      <!-- </el-col>
+  </el-row> -->
   </section>
 </template>
 <script>
