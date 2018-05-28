@@ -1,6 +1,11 @@
 <template>
   <section>
-    <div id="charBar" style="width:100%; height:600px;"></div>
+    <el-col :span="24">
+      <div id="chartColumn" style="width:100%; height:400px;"></div>
+    </el-col>
+    <el-col :span="24">
+      <div id="charBar" style="width:100%; height:400px;"></div>
+    </el-col>
   </section>
 </template>
 <script>
@@ -105,7 +110,7 @@ export default {
       option = {
         title: {
           text: '设备维修量统计',
-          subtext: '纯属虚构',
+          subtext: '2017年12月',
           y: 'top',
           x: 'center'
         },
@@ -173,8 +178,36 @@ export default {
         myChart.setOption(option, true)
       }
     },
+    drawColumnChart () {
+      this.chartColumn = echarts.init(document.getElementById('chartColumn'))
+      this.chartColumn.setOption({
+        title: { text: '设备类型维修统计' },
+        tooltip: {},
+        xAxis: {
+          data: ['医用电子类', '检验、实验室类', '车床类', '非医用', '急救类', '血液透析类', '放射', '净化消毒', '负压氧气', '手术器械类', '光学内镜', '超声诊断类', '计量检定类', '其他医用'],
+          axisTick: {
+            alignWithLabel: true
+          },
+          axisLabel: {
+            showMaxLabel: true,
+            rotate: 35
+          }
+        },
+        yAxis: {},
+        series: [{
+          name: '设备类型维修统计',
+          type: 'bar',
+          data: [540, 425, 389, 312, 306, 263, 255, 241, 209, 161, 151, 84, 60, 217],
+          label: {
+            show: true,
+            rotate: -90
+          }
+        }]
+      })
+    },
     drawCharts () {
       this.drawBarCharts()
+      this.drawColumnChart()
     }
   },
   mounted: function () {
