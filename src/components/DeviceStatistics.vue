@@ -16,8 +16,8 @@ export default {
       var pieChart = echarts.init(document.getElementById('charPie'))
       var option = {
         title: {
-          text: '设备类别',
-          subtext: '纯属虚构',
+          text: '设备年限分布图',
+          subtext: '截止至2018年12月',
           x: 'center'
         },
         tooltip: {
@@ -30,20 +30,22 @@ export default {
           left: 10,
           top: 20,
           bottom: 20,
-          data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+          data: ['1年内', '1-2年', '2-3年', '3-4年', '4-5年', '5-6年', '6年以上']
         },
         series: [
           {
-            name: '访问来源',
+            name: '年限分布图',
             type: 'pie',
             radius: '55%',
             center: ['50%', '60%'],
             data: [
-              {value: 335, name: '直接访问'},
-              {value: 310, name: '邮件营销'},
-              {value: 234, name: '联盟广告'},
-              {value: 135, name: '视频广告'},
-              {value: 1548, name: '搜索广告'}
+              {value: 218, name: '1年内'},
+              {value: 147, name: '1-2年'},
+              {value: 217, name: '2-3年'},
+              {value: 252, name: '3-4年'},
+              {value: 198, name: '4-5年'},
+              {value: 240, name: '5-6年'},
+              {value: 1641, name: '6年以上'}
             ],
             itemStyle: {
               emphasis: {

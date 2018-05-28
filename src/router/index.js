@@ -6,6 +6,7 @@ import DeviceStatistics from '@/components/DeviceStatistics'
 import RepairStatistics from '@/components/RepairStatistics'
 import MaintanceStatistics from '@/components/MaintanceStatistics'
 import MeasurementStatistics from '@/components/MeasurementStatistics'
+import ScrapEquipmentStatistics from '@/components/ScrapEquipmentStatistics'
 Vue.use(Router)
 
 export default new Router({
@@ -39,6 +40,11 @@ export default new Router({
       path: '/measurementstatistics',
       name: 'measurementstatistics',
       component: MeasurementStatistics
+    },
+    {
+      path: '/scrapequipmentstatistics',
+      name: 'scrapequipmentstatistics',
+      component: ScrapEquipmentStatistics
     }
   ]
 })
